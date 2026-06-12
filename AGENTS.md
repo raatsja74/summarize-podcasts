@@ -23,3 +23,18 @@
   - Firefox Playwright extension tests are not reliable (`moz-extension://` limitation); default `test:firefox` skips.
   - Use `pnpm -C apps/chrome-extension test:firefox:force` only for explicit diagnostics.
 - Commits: use `committer "type: message" <files...>` (Conventional Commits).
+
+## Task Coordination
+On session start, check for open issues in this repository:
+1. **Find work:** Look for issues labeled with your agent identifier (`claude-code`, `codex`, `clanker`, etc.)
+2. **Prioritize:** 
+   - Issues with assigned milestones first
+   - Then issues labeled `urgent`
+   - Then oldest issue first
+3. **Self-assign:** Assign yourself to the issue and move to "In Progress" (if using Projects)
+4. **Work & update:** Comment at meaningful checkpoints (not every small step)
+5. **Close cleanly:** When complete, add a closing comment with:
+   - What was accomplished
+   - Any relevant file paths or outputs
+   - Link to this session if applicable
+If no labeled issues exist, proceed with the user's direct request.
